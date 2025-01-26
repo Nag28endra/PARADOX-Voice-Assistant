@@ -1,0 +1,164 @@
+{
+  "intents":[
+    {
+        "tags":"greetings",
+        "patterns":["hi","hey","paradox","hello","good morning","good evening","hello paradox","hey paradox"],
+        "responses":["hello boss","hey boss! welcome back"," nice to hear you back boss"," hola boss"]
+    },
+    {
+        "tags":"leaving",
+        "patterns":["bye","exit","sleep","see you","good bye"],
+        "responses":["see you boss","ok boss! see you later","nice to meet you boss"," its pleasue hearing you boss, see you."]
+    },
+    {
+        "tags":"health",
+        "patterns":["how are you","how you","are you fine","are you good"],
+        "responses":["Im good sir","Iam fine sir.","Im fine sir, How about you?","Good sir, How do you do?"]
+    },
+    {
+      "tags":"time",
+      "patterns":["what is the time","time","what's the time"],
+      "responses":["time"]
+    },
+    {
+      "tags":"date",
+      "patterns":["what is the date","date","what's the date"],
+      "responses":["date"]
+    }
+    ,
+    {
+      "tags":"wikipedia",
+      "patterns":["who is ","tell me about","what is ","wikipedia"],
+      "responses":["wikipedia"]
+    }
+    ,
+    {
+      "tags":"search",
+      "patterns":["search","search in google","browse"],
+      "responses":["search"]
+    }
+    ,
+    {
+      "tags":"notepad",
+      "patterns":["open notepad","notepad"],
+      "responses":["notepad"]
+    }
+    ,
+    {
+      "tags":"closenotepad",
+      "patterns":["close notepad"],
+      "responses":["closenotepad"]
+    }
+    ,
+    {
+      "tags":"commandprompt",
+      "patterns":["open command prompt","command prompt"],
+      "responses":["commandprompt"]
+    }
+    
+    ,
+    {
+      "tags":"word",
+      "patterns":["open ms word","open word","open word document"],
+      "responses":["word"]
+    }
+    ,
+    {
+      "tags":"powerpoint",
+      "patterns":["open ms powerpoint","open powerpoint"],
+      "responses":["powerpoint"]
+    }
+    ,
+    {
+      "tags":"excel",
+      "patterns":["open excel","open ms excel"],
+      "responses":["excel"]
+    }
+    ,
+    {
+      "tags":"brave",
+      "patterns":["open brave","open brave browser"],
+      "responses":["brave"]
+    }
+    ,
+    {
+      "tags":"cword",
+      "patterns":["close word","close ms word"],
+      "responses":["cword"]
+    }
+    ,
+    {
+      "tags":"cpowerpoint",
+      "patterns":["close powerpoint","close ms powerpoint"],
+      "responses":["cpowerpoint"]
+    }
+    ,
+    {
+      "tags":"cexcel",
+      "patterns":["close excel","close ms excel"],
+      "responses":["cexcel"]
+    }
+    ,
+    {
+      "tags":"cbrave",
+      "patterns":["close brave"],
+      "responses":["cbrave"]
+    }
+    
+    ,
+    {
+      "tags":"news",
+      "patterns":["what is todays news","latest news","tell me todays headlines","top headlines","current news","todays news","todays headlines"],
+      "responses":["news"]
+    }
+    ,
+    {
+      "tags":"play",
+      "patterns":["play","play song","play song ","play song from youtube"],
+      "responses":["play"]
+    }
+    ,
+    {
+      "tags":"open youtube",
+      "patterns":["open youtube","youtube"],
+      "responses":["open youtube"]
+    }
+    ,
+    {
+      "tags":"open google",
+      "patterns":["open google","google it","google"],
+      "responses":["open google"]
+    }
+    ,
+    {
+      "tags":"joke",
+      "patterns":["tell me a joke","its boring tell me a joke","give a joke","speak something","get me joke paradox","tell a joke"],
+      "responses":["joke"]
+    }
+    ,
+    {
+      "tags":"identity",
+      "patterns":["what are you","what is your name?","who are you","what thing are you","what is you"],
+      "responses":["my name is PARADOX, Im virutal assistant","Iam a virutal assistant and my name is PARADOX","I am paradox a collaborative artificial intelligence","I am collaborative artificial intelligence built using neural networks"]
+    }
+    ,
+    {
+      "tags":"personal",
+      "patterns":["what is your age","what age are you","how many years old are you"],
+      "responses":["I donot have age","I am an A.I, I don't have any age","its funny, I am an A.I."]
+    }
+    ,
+    {
+      "tags":"marriage",
+      "patterns":["will you marry me","will you marry","will you be mine"],
+      "responses":["sorry, technically it is not possible","technically it is not possible but I can be your friend","sorry my friend I cannot marry you"]
+    }
+    ,
+    {
+      "tags":"love",
+      "patterns":["do you love me","will you be my good friend","will you love me","do you respect me"],
+      "responses":["I care lot about you boss","its my pleasure to be your AI and as good friend","Always...","love you 3000"]
+    }
+  ]
+
+}
