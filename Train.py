@@ -1,3 +1,5 @@
+"""Training pipeline for the PARADOX intent-classification model."""
+
 from typing import ClassVar
 import json
 import torch
@@ -10,6 +12,8 @@ import numpy as np
 from numpy.core.numeric import identity
 from numpy.lib.function_base import bartlett
 import nltk
+
+# Ensure the placeholder tokenizer data is available for the current NLTK install.
 nltk.download('punkt_tab')
 
 with open('intents.json','r') as f:
@@ -32,6 +36,7 @@ ignore_words = [',','?',".","!"]
 all_words = [stem(w) for w in all_words if w not in ignore_words]
 tags = sorted(set(tags))
 
+# Convert the collected phrases into numeric feature vectors for training.
 x_train =[]
 y_train = []
 
@@ -56,6 +61,8 @@ print("Training Model...")
 
 
 class ChatDataset(Dataset):
+    """Dataset wrapper that exposes the prepared training examples."""
+
     def __init__(self):
         self.n_samples = len(x_train)
         self.x_data = x_train
@@ -67,6 +74,7 @@ class ChatDataset(Dataset):
     def __len__(self):
         return self.n_samples
 
+# Load the dataset into a PyTorch DataLoader for mini-batch training.
 dataset = ChatDataset()
 
 train_loader = DataLoader(dataset=dataset,batch_size=batch_size,shuffle=True,num_workers=0)
@@ -90,6 +98,7 @@ for epoch in range(num_epochs):
 
 print(f"final loss:{loss.item():.4f}")
 
+# Save the trained model and the metadata needed during inference.
 data = {
     "model_state": model.state_dict(),
     "input_size": input_size,
